@@ -15,11 +15,11 @@ class Tool(models.Model):
 
 class CheckOutLog(models.Model):
     tool_id = models.ForeignKey(Tool)
-    checkout_ID = models.ForeignKey(Staff)
-    checkin_ID = models.ForeignKey(Staff)
+    checkout_ID = models.ForeignKey(Borrower)
+    checkin_ID = models.ForeignKey(Borrower)
     checkout_time = models.DateTimeField(default=datetime.datetime.now)
     checkin_time = models.DateTimeField(blank=True, default=None)
 
 
-class Staff(models.Model):
+class Borrower(models.Model):
     user_id = models.OneToOneField(User, primary_key=True)
