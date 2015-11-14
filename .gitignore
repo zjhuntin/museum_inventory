@@ -1,6 +1,64 @@
 # Created by https://www.gitignore.io/api/ython,ipythonnotebook,pycharm
 
-#!! ERROR: ython is undefined. Use list command to see defined gitignore types !!#
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
 
 ### IPythonNotebook ###
 # Temporary data
@@ -22,7 +80,11 @@
 .idea/dictionaries
 
 # Sensitive or high-churn files:
+<<<<<<< HEAD
 # .idea/dataSources.ids
+=======
+.idea/dataSources.ids
+>>>>>>> 63992b680519eaae233bb0c982b73b5adc7053d7
 .idea/dataSources.xml
 .idea/sqlDataSources.xml
 .idea/dynamic.xml
@@ -56,5 +118,9 @@ crashlytics.properties
 crashlytics-build.properties
 .direnv/
 .envrc
+<<<<<<< HEAD
 *.pyc
 */__pycache__/
+=======
+*/__pyenv__/*
+>>>>>>> 63992b680519eaae233bb0c982b73b5adc7053d7

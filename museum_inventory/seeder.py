@@ -9,7 +9,6 @@ def seed_tools():
     for idx in range(100):
         random.shuffle(tools)
         tool_type = tools[0][1]
-        new_tool = Tool(tool_type= tools[0][1],
-                        tool_group=tools[0][0],
-                        working_status='working')
+        tool_group = 'random'
+        new_tool = Tool.create.create_tool(tool_type, tool_group)
         new_tool.save()

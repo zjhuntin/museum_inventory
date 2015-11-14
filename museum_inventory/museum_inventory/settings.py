@@ -38,7 +38,11 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'debug_toolbar',
+<<<<<<< HEAD
     'django_extensions'
+=======
+    'inventory',
+>>>>>>> 63992b680519eaae233bb0c982b73b5adc7053d7
 )
 
 MIDDLEWARE_CLASSES = (
