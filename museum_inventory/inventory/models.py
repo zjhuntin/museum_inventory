@@ -40,7 +40,7 @@ class CheckOutLog(models.Model):
     checkout_ID = models.ForeignKey(Borrower)
     checkin_ID = models.ForeignKey(Borrower, null=True, blank=True,
                                    related_name='Returner')
-    check_out_time = models.DateTimeField(default=datetime.now())
+    check_out_time = models.DateTimeField(auto_now_add=True)
     check_in_time = models.DateTimeField(null=True)
 
 class CheckInLog(models.Model):
